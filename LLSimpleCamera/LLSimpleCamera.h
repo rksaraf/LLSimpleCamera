@@ -167,6 +167,11 @@ typedef enum : NSUInteger {
 - (void)stopRecording:(void (^)(LLSimpleCamera *camera, NSURL *outputFileUrl, NSError *error))completionBlock;
 
 /**
+ * Get the preview view
+ */
+- (UIView *)getPreviewView;
+
+/**
  * Attaches the LLSimpleCamera to another view controller with a frame. It basically adds the LLSimpleCamera as a
  * child vc to the given vc.
  * @param vc A view controller.

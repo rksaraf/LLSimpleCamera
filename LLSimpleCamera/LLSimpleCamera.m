@@ -152,6 +152,10 @@ NSString *const LLSimpleCameraErrorDomain = @"LLSimpleCameraErrorDomain";
 
 #pragma mark - Camera
 
+- (UIView *)getPreviewView {
+    return self.preview;
+}
+
 - (void)attachToViewController:(UIViewController *)vc withFrame:(CGRect)frame
 {
     [vc addChildViewController:self];
